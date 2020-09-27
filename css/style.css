@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1rem;
+}
+
+ul {
+  font-size: 1rem;
+}
+
+li {
+  font-size: 1rem;
+}
+
+u {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cinzel", serif;
+}
+
+p, a, li, u, ul {
+  font-family: "Montserrat", sans-serif;
+}
+
+.style-1 {
+  background: #ffffff;
+  color: #121212;
+}
+
+.style-1r {
+  background: #121212;
+  color: #ffffff;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 20px;
+  background: #ffffff;
+  color: #121212;
+  margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+main {
+  height: 100vh;
+  margin: 0px auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-grid-rows: 8rem 1fr min-content;
+      grid-template-rows: 8rem 1fr -webkit-min-content;
+      grid-template-rows: 8rem 1fr min-content;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+}
+
+header {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+article, nav {
+  max-width: 1300px;
+  margin: 0px auto;
+}
+
+section {
+  margin: 0px auto;
+  overflow: auto;
+  width: 100%;
+}
+
+footer {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.social {
+  margin: 0.25rem 0 0.25rem 0;
+}
+
+.social a {
+  margin: 0 0.25rem 0 0.25rem;
+  font-size: 2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-shadow: 0 0 1rem #121212;
+  color: #ffffff;
+}
+
+.social a:hover, .social a:active {
+  text-shadow: 0 0 1rem #ffffff;
+  color: #121212;
+}
+
+.logo {
+  margin: 0 0 0 0;
+}
+
+.logo h2 {
+  -webkit-transition: 2s;
+  transition: 2s;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-shadow: 0 0 1rem #121212;
+  margin: 0 0 0 0;
+}
+
+.logo i {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.logo:hover i, .logo:active i {
+  -webkit-transform: translateX(14.5rem);
+          transform: translateX(14.5rem);
+}
+
+.logo:hover h2, .logo:active h2 {
+  -webkit-transform: translateX(-2.2rem);
+          transform: translateX(-2.2rem);
+}
+
+.me {
+  margin: 1rem auto;
+  border-radius: 20%;
+  overflow: hidden;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem #121212;
+          box-shadow: 0.25rem 0.25rem 0.5rem #121212;
+  width: 17rem;
+  height: auto;
+}
+
+.me img {
+  -webkit-transition: 2s;
+  transition: 2s;
+  width: 17rem;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.me:hover img, .me:active img {
+  -webkit-transform: scale(1.5) translateY(10%) rotate(-5deg);
+          transform: scale(1.5) translateY(10%) rotate(-5deg);
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(238, 174, 202, 0.8);
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: stretch;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-shadow: 2px 2px 0.5rem #121212, -2px -2px 0.75rem #121212, 2px -2px 0.75rem #121212, -2px 2px 0.75rem #121212;
+  color: #ffffff;
+}
+
+nav a:hover, nav a:active {
+  text-shadow: 0 0 1rem #ffffff;
+  color: #121212;
+}
+
+nav a.active {
+  background-color: rgba(148, 187, 233, 0.5);
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+@media screen and (max-width: 580px) {
+  nav {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.space {
+  height: 2rem;
+}
+
+.content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0.75rem 0.75rem 0.75rem rgba(18, 18, 18, 0.5);
+          box-shadow: 0.75rem 0.75rem 0.75rem rgba(18, 18, 18, 0.5);
+}
+
+.content-block a {
+  margin: 0 0.25rem 0 0.25rem;
+  font-size: 1.2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-shadow: 0 0 1.5rem #121212;
+  color: #121212;
+}
+
+.content-block a:hover, .content-block a:active {
+  text-shadow: 0 0 1rem #121212;
+  color: #ffffff;
+}
+
+.content-simple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content-back {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.content-back .content-50 {
+  text-align: right;
+}
+
+.content-100 {
+  width: 100%;
+  text-align: center;
+}
+
+.content-50 {
+  width: 50%;
+}
+
+.content-50 .content-back {
+  text-align: right;
+}
+
+.content-33 {
+  width: 33%;
+}
+
+@media screen and (max-width: 580px) {
+  .content-50 {
+    width: 100%;
+  }
+  .content-33 {
+    width: 100%;
+  }
+}
+
+.circle {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  right: 50%;
+  margin: 1rem auto;
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem #121212;
+          box-shadow: 0.25rem 0.25rem 0.5rem #121212;
+  border-radius: 50%;
+}
+
+.circle img {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
